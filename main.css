@@ -1,0 +1,546 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500&display=swap');
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-family: 'Comfortaa', cursive;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;  
+    padding: 0;
+    margin: 0;
+}
+
+.navbar {
+    width: 100%;
+    height: 4.3rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(218, 215, 215, 0.5);
+    box-shadow: rgba(218, 215, 215, 0.5);
+    position: relative;
+    z-index: 2;
+}
+
+.nav-brand  img {
+    width: 7.6rem;
+    height: 4.8rem;
+    max-height: 4.8rem;
+}
+
+.nav-items__list {
+    margin-right: 1rem;
+}
+
+.nav-item {
+    display: none;
+    margin-right: 2.5rem;
+    cursor: pointer;
+}
+
+.nav-item:hover {
+    color: #ab009d;
+}
+
+.hamburger {
+    width: 35px;
+    height: 4px;
+    background-color: #490442;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    margin-right: 2.2rem;
+  }
+
+  .hamburger_main {
+    cursor: pointer;
+  }
+
+
+
+.main-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.616), rgba(0, 0, 0, 0.623)), url("images/cake.jpg");
+    background-position: center;
+    background-size: cover;
+    max-width: 100%;
+    width: 100vw;
+    height: 100vh;
+}
+ 
+
+.main-page__title {
+    color: white;
+    width: 85%;
+    line-height: 1.5;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.main-page__description {
+    color: white;
+    width: 85%;
+    line-height: 1.5;
+    font-weight: 400;
+    font-size: 1rem;
+    margin-top: 0.8rem;
+}
+
+.body-page {
+    background-color:#f4f4f4;
+    padding-bottom: 4rem;
+
+}
+
+.products-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+ 
+}
+
+.products-title {
+    text-align: center;
+    line-height: 1.7;
+    
+}
+
+.products-title > h1 {
+    padding-bottom: 1rem;
+    font-size: 1.92rem;
+    color: #5e0956;
+}
+
+
+.card {
+    width: 70%;
+    max-width: 25rem;
+    min-width: 18rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 4rem;
+    background-color: white;
+
+}
+
+.card-img {
+    width: 100%;
+    height: 20%;
+    border-radius: 1%;
+}
+
+
+.card-title {
+    padding-top: 1rem;
+    padding-left: 1rem;
+
+}
+
+.card-description {
+    font-size: 1rem;
+    font-weight: 100;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 0.6rem;
+}
+
+.button {
+    display: block;
+    width: 5rem;
+    height: 1.3rem;
+    background: #5e0956;
+    padding: 10px;
+    text-align: center;
+    border-radius: 7%;
+    color: white;
+    font-weight: bold;
+    line-height: 25px;
+    margin: 0 auto;
+    cursor: pointer;
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.features-page {
+    width: 100%;
+    padding-bottom: 4rem;
+    
+}
+
+.features-page__features {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding-bottom: 5rem;
+}
+
+.features-page__feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.features-page__image {
+    width: 7rem;
+    height: 7%;
+    margin-top: 7rem;
+    max-width: 15rem;
+}
+
+.features-page__title {
+    margin-top: 2rem;
+    width: 15rem;
+    text-align: center;
+    
+}
+
+.features-page__text {
+    width: 15rem;
+    text-align: center;
+    padding-top: 0.4rem;
+    font-size: 1rem;
+}
+
+hr {
+    margin-top: 4.7rem;
+    border-top: 2px solid #5e0156a2;
+    width: 24%;
+}
+
+.footer-page {
+    text-align: center;
+    height: 15%;
+    background-color: #5e0956;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+    color: white;
+}
+
+.footer-texts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.7rem;
+   
+}
+
+.footer-text {
+    margin: 0.5rem 0;
+}
+
+.footer-icons {
+    text-align: center;
+}
+
+.footer-icon {
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.footer-icon:hover {
+    color: #ee5ee2;
+}
+
+@media (min-width: 45rem) {
+
+    .hamburger {
+        display: none;
+    }
+
+    .navbar {
+        width: 100%;
+        height: 4.3rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid rgba(218, 215, 215, 0.5);
+        box-shadow: rgba(218, 215, 215, 0.5);
+        position: relative;
+        z-index: 2;
+    }
+
+    .nav-item {
+        display: inline-block;
+        margin-right: 5rem;
+    }
+
+    .nav-brand  img {
+        width: 7.6rem;
+        height: 4.8rem;
+        max-height: 4.8rem;
+        margin-left: 3.4rem;
+    }
+
+    .products-page {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        column-gap: 4rem;
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+     
+    }
+    
+    .products-title {
+        text-align: center;
+        width: 100%;
+    }
+    
+    .products-title > h1 {
+        padding-bottom: 0.7rem;
+        font-size: 2rem;
+        color: #5e0956;
+    }
+    
+    
+    .card {
+        width: 40%;
+        max-width: 18rem;
+        min-width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 5.5rem;
+        margin-bottom: 1rem;
+        background-color: white;
+        border-radius: 2%;
+    
+    }
+    
+    .card-img {
+        width: 100%;
+        height: 13rem;
+        border-radius: 1.2%;
+    }
+    
+    
+    .card-title {
+        padding-top: 1rem;
+        padding-left: 1rem;
+    }
+    
+    .card-description {
+        font-size: 1rem;
+        font-weight: 100;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-bottom: 0.6rem;
+    }
+
+    .main-page {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.616), rgba(0, 0, 0, 0.623)), url("images/cake.jpg");
+        background-position: center;
+        background-size: cover;
+        max-width: 100%;
+        width: 100vw;
+        height: 75%;
+    }
+     
+    
+    .main-page__title {
+        color: white;
+        max-width: 65%;
+        line-height: 1.5;
+        font-weight: 600;
+        font-size: 2.5rem;
+        margin-left: 6rem;
+    }
+    
+    .main-page__description {
+        color: white;
+        width: 60%;
+        line-height: 1.5;
+        font-weight: 400;
+        font-size: 1rem;
+        margin-top: 0.6rem;
+        margin-left: 6rem;
+    }
+
+
+.features-page {
+    width: 100%;
+    padding-bottom: 5rem;
+    
+}
+
+.features-page__features {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   padding-left: 2.3rem;
+   padding-right: 2.3rem;
+}
+
+
+.features-page__feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 26%;
+}
+
+
+
+.features-page__image {
+    width: 7rem;
+    height: 7%;
+    margin-top: 7rem;
+    max-width: 15rem;
+}
+
+.features-page__title {
+    margin-top: 2rem;
+    width: 100%;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.features-page__text {
+    width: 100%;
+    text-align: center;
+    padding-top: 0.5rem;
+    font-size: 0.9rem;
+}
+
+hr {
+    display: none;
+    margin-top: 4.7rem;
+    border-top: 2px solid #e925d88c;
+    width: 24%;
+}
+
+.footer-page {
+    text-align: center;
+    height: 10%;
+    background-color: #5e0956;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    color: white;
+}
+
+.footer-texts {
+   display: inline-block;
+   margin-left: 4rem;
+   margin-top: 1.5rem;
+   
+}
+
+.footer-text {
+    margin: 0.5rem 1.7rem;
+    cursor: pointer;
+
+}
+
+.footer-icons {
+    text-align: center;
+}
+
+.footer-icon {
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.footer-icon:hover {
+    color: #ee5ee2;
+}
+
+
+    
+
+}
+
+@media (min-width: 55rem) {
+    .main-page__title {
+        width: 47.2%;
+    }
+
+    .main-page__description {
+        width: 40%;
+    }
+}
+
+@media (min-width: 1568px) {
+    .main-page__title {
+        color: white;
+        max-width: 60%;
+        width: 35%;
+        line-height: 1.5;
+        font-weight: 600;
+        font-size: 2.8rem;
+        margin-left: 6rem;
+    }
+
+    .features-page__features {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 13rem;
+        padding-right: 13rem;
+        padding-bottom: 5rem;
+     }
+    
+    .main-page__description {
+        color: white;
+        width: 35%;
+        line-height: 1.5;
+        font-weight: 200;
+        font-size: 1.2rem;
+        margin-top: 0.6rem;
+        margin-left: 6rem;
+    }
+
+    .features-page__title {
+        margin-top: 2rem;
+        width: 100%;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    
+
+    .features-page__text {
+        width: 65%;
+        text-align: center;
+        padding-top: 0.5rem;
+        font-size: 1.1rem;
+    }
+
+    .footer-page {
+        text-align: center;
+        height: 10%;
+        background-color: #5e0956;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        color: white;
+    }
+}
